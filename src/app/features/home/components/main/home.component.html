@@ -1,0 +1,83 @@
+<section class="header">
+    <div class="home">
+        <img src="../../../assets/home.png" width="40vh" height="40vh" alt="">
+        <p class="scritta-home">Home</p>
+
+    </div>
+    <div class="welcome">
+        Welcome to <b>Lillo.it</b>
+    </div>
+
+    <div class="cart">
+        <i class="fas fa-shopping-cart" routerLink="/cart"></i>
+        <p class="scritta-carrello" routerLink="/cart">Carrello()</p>
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div data-am-fadeshow="next-prev-navigation">
+
+        <!-- Radio -->
+        <input type="radio" name="css-fadeshow" id="slide-1" />
+        <input type="radio" name="css-fadeshow" id="slide-2" />
+        <input type="radio" name="css-fadeshow" id="slide-3" />
+        <input type="radio" name="css-fadeshow" id="slide-4" />
+
+        <!-- Slides -->
+        <div class="fs-slides">
+
+            <div class="fs-slide" routerLink="/personalizza" style="background-image: url(../../../assets/xiaomi-home.jpg);"> </div>
+
+            <div routerLink="/personalizza-2" class="fs-slide" style="background-image: url(../../../assets/tablet-home.jpg);"></div>
+
+            <div routerLink="/personalizza-3" class="fs-slide" style="background-image: url(../../../assets/pc-home.jpg);"></div>
+
+            <div routerLink="/personalizza-4" class="fs-slide" style="background-image: url(../../../assets/logitech-home.jpg);"></div>
+        </div>
+
+
+
+
+
+
+        <!-- Quick Navigation -->
+        <div class="fs-quick-nav">
+            <label class="fs-quick-btn" for="slide-1"></label>
+            <label class="fs-quick-btn" for="slide-2"></label>
+            <label class="fs-quick-btn" for="slide-3"></label>
+            <label class="fs-quick-btn" for="slide-4"></label>
+        </div>
+
+        <!-- Prev Navigation -->
+        <div class="fs-prev-nav">
+            <label class="fs-prev-btn" for="slide-1"></label>
+            <label class="fs-prev-btn" for="slide-2"></label>
+            <label class="fs-prev-btn" for="slide-3"></label>
+            <label class="fs-prev-btn" for="slide-4"></label>
+        </div>
+
+        <!-- Next Navigation -->
+        <div class="fs-next-nav">
+            <label class="fs-next-btn" for="slide-1"></label>
+            <label class="fs-next-btn" for="slide-2"></label>
+            <label class="fs-next-btn" for="slide-3"></label>
+            <label class="fs-next-btn" for="slide-4"></label>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="gallery">
+    <img routerLink="/personalizza" src='../../../assets/xiaomi.jpg' alt='' style="margin-left: 50px;">
+    <img routerLink="/personalizza-2" src='../../../assets/tablet.jpg' alt='' style="margin-left: 50px;">
+    <img routerLink="/personalizza-3" src='../../../assets/pc.jpg' alt='' style="margin-left: 50px;">
+    <img routerLink="/personalizza-4" src='../../../assets/logitech.jpg' alt='' style="margin-left: 50px;">
+
+</div>
+
+<div>
+    <button class="personalizza" routerLink="/personalizza">PERSONALIZZA ORA</button>
+</div>

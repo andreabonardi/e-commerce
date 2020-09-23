@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="loginForm" class="login" (ngSubmit)="doLogin()" ngNativeValidate>
+        <button type="button" class="bottone-registrati" routerLink="/signup"> + </button>
+        <div>
+            <img src="../../../assets/logo.png" alt="logo" class="logo">
+            <p class="accedi">Accedi</p>
+            <input formControlName="username" id="username" placeholder="Username" class="input" required>
+        </div>
+
+        <div>
+            <input formControlName="password" id="password" placeholder="Password" class="input-password" required>
+            <img src="../../../assets/icone/eye.png" alt="occhio" class="eye">
+        </div>
+        <!--  Memorizza password (solo icona, non va) -->
+        <div>
+            <span class="password">Memorizza password</span>
+            <label class="switch">
+                <input type="checkbox" >
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <button type="submit" class="signup-button">
+            <span> Accedi </span>
+        </button>
+    </form>
+</div>
